@@ -1,0 +1,4 @@
+1. di golang untuk web kita perlu membuat suatu rooting untuk mengarahkan kita akses sebuah url
+localhost:8080/satu
+
+digolang kita bisa menggunak mux
