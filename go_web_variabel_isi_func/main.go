@@ -23,6 +23,11 @@ func main()  {
 	//panggil variabel isi func
 	mux.HandleFunc("/about",data)
 
+	//buat func dalam rooting
+	//ini func anonymus tanpa nama
+	mux.HandleFunc("/profile",func(w http.ResponseWriter, r*http.Request){
+		w.Write([]byte("ini halaman profile "))
+	})
 	
 	log.Println("Starting web on port 8080")
 
