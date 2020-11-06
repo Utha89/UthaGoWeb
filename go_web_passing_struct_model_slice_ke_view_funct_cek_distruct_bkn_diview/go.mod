@@ -1,0 +1,3 @@
+module go_web_passing_struct_model_slice_ke_view_funct_cek_distruct_bkn_diview
+
+go 1.15

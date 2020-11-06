@@ -1,0 +1,28 @@
+{{  define "layout" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cara Passingnya-->
+    <title>Product</title>
+</head>
+<body>
+
+    <div class="header">
+
+        Header nya
+    </div>
+    <div class="text">
+        <!-- Cara Passingnya-->
+        <!-- Ini dinamis seperti di ci yaitu container -->
+       {{ template "main" .}}
+    </div>
+    <div class="footer">
+
+        footer nya
+    </div>
+</body>
+</html>
+
+{{ end }}

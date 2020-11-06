@@ -9,9 +9,10 @@
     <!-- Cara Passingnya-->
     {{ .ID }} - {{ .Name }} -
     <!-- cara panggil yg pengecakannya bukan lg di view tp di model-->
-   {{  if lt .Stock  3  }}
+    {{ .StockStatus }}
+   <!-- {{  if lt .Stock  3  }}
         Stcok Hampir habis
-   {{ end }}
+   {{ end }} -->
 </div>
 {{ end }}
 {{ end }}
