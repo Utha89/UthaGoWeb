@@ -1,0 +1,16 @@
+{{ template "layout" .}}
+{{ define "main" }}
+
+
+
+
+{{ range . }}
+<div class="text">
+    <!-- Cara Passingnya-->
+    {{ .ID }} - {{ .Name }} -
+   {{  if lt .Stock  3  }}
+        Stcok Hampir habis
+   {{ end }}
+</div>
+{{ end }}
+{{ end }}

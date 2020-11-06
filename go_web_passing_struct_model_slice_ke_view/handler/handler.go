@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"go_web_passing_struct_ke_view/entity"
+	"go_web_passing_struct_model_slice_ke_view/entity"
 	"html/template"
 	"log"
 	"net/http"
@@ -52,7 +52,15 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 
 	//Tanggal 7 November 2020
 	//passing struct ke html
-	data := entity.Product{ID: 1, Name: "Sabun GIV", Price: 40000, Stock: 2}
+	//data := entity.Product{ID: 1, Name: "Sabun GIV", Price: 40000, Stock: 2}
+	//next cara aksesnya di template
+
+	//Slice datanya banyak yg nanti di looping
+	data := [] /*namaStructnya*/ entity.Product{
+		{ID: 1, Name: "Sabun GIV", Price: 40000, Stock: 2},
+		{ID: 2, Name: "Sabun LUX", Price: 45000, Stock: 5},
+		{ID: 3, Name: "Sabun DOVE", Price: 20000, Stock: 1},
+	}
 
 	// untuk rendering disin biar bisa jalanin yg "views", "index.html")
 	// err = tmpl.Execute(w, nil)
