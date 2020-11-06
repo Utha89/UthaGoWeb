@@ -2,10 +2,11 @@
 {{ define "main" }}
 
 
-
+<!--Load css-->
+<link rel="stylesheet" href="static/style.css">
 
 {{ range . }}
-<div class="text">
+<div class="text box-with-shadow">
     <!-- Cara Passingnya-->
     {{ .ID }} - {{ .Name }} -
     <!-- cara panggil yg pengecakannya bukan lg di view tp di model-->
