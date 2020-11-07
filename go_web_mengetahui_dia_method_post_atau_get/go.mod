@@ -1,0 +1,3 @@
+module go_web_mengetahui_dia_method_post_atau_get
+
+go 1.15
